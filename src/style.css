@@ -1,0 +1,121 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+
+header {
+  min-height: 85px;
+}
+
+header.small {
+  min-height: 60px;
+}
+
+h3,
+p {
+  margin-bottom: 25px;
+}
+
+h2,
+h3,
+.next-page {
+  font-family: 'Roboto Slab';
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #ebaa17;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.2;
+}
+
+button {
+  display: block;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.container {
+  /* width: 100%;
+  max-width: 1200px; */
+}
+
+.next-page {
+  color: #868686;
+  font-weight: bold;
+}
+
+.social-button {
+  width: 25px;
+  height: 25px;
+}
+
+.page {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 4.1916%;
+  padding-left: 10%;
+}
+
+.text-container {
+  position: relative;
+  width: 33.3333%;
+  max-width: 375px;
+}
+
+.page:nth-of-type(1) {
+  background: url('./images/1.svg') center right no-repeat;
+}
+
+.page:nth-of-type(2) {
+  background: url('./images/2.svg') center right no-repeat;
+}
+
+.page:nth-of-type(3) {
+  background: url('./images/3.svg') center right no-repeat;
+}
+
+.page:nth-of-type(4) {
+  background: url('./images/4.svg') center right 0 no-repeat;
+}
+
+.navigation {
+  position: fixed;
+  top: 120px;
+  right: 6.6666%;
+}
+
+.navigation-link {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-bottom: 35px;
+  background: #9a9a9a;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navigation-link.active {
+  background: #ffac00;
+}
