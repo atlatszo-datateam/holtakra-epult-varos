@@ -29,7 +29,6 @@ function navigateToPage (event) {
   const page = document.querySelector(pageId)
   
   page.scrollIntoView({behavior: 'smooth', block: 'start'})
-  history.pushState(null, null, pageId)
 }
 
 function setCurrentPage () {
@@ -41,8 +40,7 @@ function setCurrentPage () {
     const page = getClosestPage(windowPosition)
 
     changeActivePaginationButton(navigationButtons[page])
-    history.pushState(null, null, `#page-${page + 1}`)
-  }, 100)
+  }, 66)
 }
 
 setCurrentPage()
