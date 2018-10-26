@@ -55,14 +55,11 @@ button {
   cursor: pointer;
 }
 
-.container {
-  /* width: 100%;
-  max-width: 1200px; */
-}
-
 .next-page {
   color: #868686;
+  font-size: 16px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .social-button {
@@ -74,36 +71,48 @@ button {
   display: flex;
   width: 100%;
   min-height: 100vh;
-  padding-top: 4.1916%;
+  padding-top: 5px;
   padding-left: 10%;
 }
 
 .text-container {
   position: relative;
-  width: 33.3333%;
-  max-width: 375px;
+  z-index: 1;
+  top: 30px;
+  width: 400px;
 }
 
-.page:nth-of-type(1) {
-  background: url('./images/1.svg') center right no-repeat;
+.map-container {
+  position: absolute;
+  right: 0;
+  width: 77.6666%;
+  height: 100%;
+  max-height: 900px;
+  background-size: cover;
+  box-shadow: 0 0 20px 10px black inset;
 }
 
-.page:nth-of-type(2) {
-  background: url('./images/2.svg') center right no-repeat;
+.map-container:nth-of-type(1) {
+  background: url('./images/1.svg') top right no-repeat;
 }
 
-.page:nth-of-type(3) {
-  background: url('./images/3.svg') center right no-repeat;
+.map-container:nth-of-type(2) {
+  background: url('./images/2.svg') top right no-repeat;
 }
 
-.page:nth-of-type(4) {
-  background: url('./images/4.svg') center right 0 no-repeat;
+.map-container:nth-of-type(3) {
+  background: url('./images/3.svg') top right no-repeat;
+}
+
+.map-container:nth-of-type(4) {
+  background: url('./images/4.svg') top right 0 no-repeat;
 }
 
 .navigation {
   position: fixed;
   top: 120px;
-  right: 6.6666%;
+  right: 3.5%;
+  z-index: 1;
 }
 
 .navigation-link {
@@ -118,4 +127,18 @@ button {
 
 .navigation-link.active {
   background: #ffac00;
+}
+
+@media (max-width: 1366px) {
+  .page {
+    padding-left: 30px;
+  }
+
+  .navigation {
+    right: 30px;
+  }
+
+  .text-container {
+    width: 350px;
+  }
 }
