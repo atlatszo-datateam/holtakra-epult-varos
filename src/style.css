@@ -139,7 +139,7 @@ button {
 
 .map-container {
   position: absolute;
-  top: 120x;
+  top: 120px;
   right: 0;
   width: 80%;
   height: 100%;
@@ -149,7 +149,7 @@ button {
   box-shadow: 0 0 20px 10px black inset;
 }
 
-.map-container:first-of-type {
+#page-1 .map-container:first-of-type {
   top: 100px;
 }
 
