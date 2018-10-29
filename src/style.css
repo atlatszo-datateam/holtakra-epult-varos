@@ -166,7 +166,10 @@ button {
   background-size: contain;
 }
 
-
+#page-5 .map-container {
+  background: url('./images/004_reformkor_2016px.jpg') top right no-repeat;
+  background-size: contain;
+}
 
 .navigation {
   position: fixed;
@@ -183,6 +186,8 @@ button {
 }
 
 .navigation-link {
+  position: relative;
+  left: calc(100% - 28px);
   display: inline-block;
   width: 28px;
   height: 28px;
@@ -193,8 +198,23 @@ button {
   transition: background .3s;
 }
 
-.navigation-link.active {
+.navigation li.hover .navigation-link,
+.navigation li.active .navigation-link {
   background: #ffac00;
+}
+
+.navigation-text {
+  position: absolute;
+  right: 45px;
+  color: transparent;
+  font-weight: bold;
+  padding-top: 7px;
+  transition: all .3s;
+}
+
+.navigation li.hover .navigation-text {
+  color: #ffac00;
+  text-shadow: 1px 1px 2px black;
 }
 
 @media (max-width: 1366px) {

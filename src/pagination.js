@@ -1,4 +1,5 @@
 const navigationButtons = Array.from(document.querySelectorAll('.navigation-link'))
+const navigationListItems = Array.from(document.querySelectorAll('.navigation li'))
 const nextPageButtons = Array.from(document.querySelectorAll('.next-page'))
 const pages = Array.from(document.querySelectorAll('.page'))
 const pagesTopPositions = pages.map(getElementTopPosition)
@@ -18,8 +19,8 @@ function getClosestPage (windowPosition) {
 }
 
 function changeActivePaginationButton (button) {
-  navigationButtons.forEach(button => button.classList.remove('active'))
-  button.classList.add('active')
+  navigationListItems.forEach(item => item.classList.remove('active'))
+  button.closest('li').classList.add('active')
 }
 
 function navigateToPage (event) {
@@ -43,8 +44,14 @@ function setCurrentPage () {
   }, 66)
 }
 
+function toggleNavigationText (event) {
+  event.target.closest('li').classList.toggle('hover')
+}
+
 setCurrentPage()
 
 navigationButtons.forEach(button => button.addEventListener('click', navigateToPage))
+navigationButtons.forEach(button => button.addEventListener('mouseover', toggleNavigationText))
+navigationButtons.forEach(button => button.addEventListener('mouseleave', toggleNavigationText))
 nextPageButtons.forEach(button => button.addEventListener('click', navigateToPage))
 window.addEventListener('scroll', setCurrentPage)
