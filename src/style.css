@@ -21,27 +21,20 @@ body {
   font-size: 16px;
 }
 
-text.cls-5 {
-  font-family: 'Roboto' !important;
+h2,
+h3,
+.next-page {
+  font-family: 'Roboto Slab';
 }
 
-header {
-  min-height: 85px;
-}
-
-header.small {
-  min-height: 60px;
+header h2 ,
+header h3 {
+  margin-bottom: 0;
 }
 
 h3,
 p {
   margin-bottom: 25px;
-}
-
-h2,
-h3,
-.next-page {
-  font-family: 'Roboto Slab';
 }
 
 h2 {
@@ -113,11 +106,14 @@ button {
 
 .page {
   position: relative;
-  display: flex;
   width: 100%;
   min-height: 100vh;
   margin-bottom: 10px;
-  padding-top: 5px;
+  padding-top: 30px;
+}
+
+.inline {
+  display: flex;
 }
 
 .container {
@@ -144,30 +140,33 @@ button {
   width: 80%;
   height: 100%;
   max-height: 645px;
-  background: url('./images/001_kozepkor_2016px.jpg') top right no-repeat;
+  background: url('./images/000_bevezetes_2016px.jpg') top right no-repeat;
   background-size: contain;
   box-shadow: 0 0 20px 10px black inset;
 }
 
-#page-1 .map-container:first-of-type {
-  top: 100px;
+#page-1 .map-container {
+  top: 95px;
+  background: url('./images/000_bevezetes_2016px.jpg') top right no-repeat;
+  background-size: contain;
 }
 
-/* .map-container:nth-of-type(1) {
-  background: url('./images/1.svg') top right no-repeat;
+#page-2 .map-container {
+  background: url('./images/001_kozepkor_2016px.jpg') top right no-repeat;
+  background-size: contain;
 }
 
-.map-container:nth-of-type(2) {
-  background: url('./images/2.svg') top right no-repeat;
+#page-3 .map-container {
+  background: url('./images/002_torok_hodoltsag_2016px.jpg') top right no-repeat;
+  background-size: contain;
 }
 
-.map-container:nth-of-type(3) {
-  background: url('./images/3.svg') top right no-repeat;
+#page-4 .map-container {
+  background: url('./images/003_Buda_vissza_utan_2016px.jpg') top right no-repeat;
+  background-size: contain;
 }
 
-.map-container:nth-of-type(4) {
-  background: url('./images/4.svg') top right 0 no-repeat;
-} */
+
 
 .navigation {
   position: fixed;
