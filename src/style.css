@@ -275,6 +275,7 @@ button {
 
 .impressum a {
   color: white;
+  transition: color .3s;
 }
 
 .impressum a:hover {
