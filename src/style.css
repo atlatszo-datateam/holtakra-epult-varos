@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('roboto.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('roboto_slab.ttf');
+}
+
 *,
 *:before,
 *:after {
@@ -9,6 +19,10 @@ body {
   color: white;
   font-family: 'Roboto';
   font-size: 16px;
+}
+
+text.cls-5 {
+  font-family: 'Roboto' !important;
 }
 
 header {
@@ -62,9 +76,39 @@ button {
   text-decoration: none;
 }
 
+.next-page svg {
+  width: 40px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100px;
+  margin-top: 20px;
+}
+
 .social-button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.social-button.instagram svg {
   width: 25px;
   height: 25px;
+}
+
+.social-button.facebook svg {
+  width: 14px;
+  height: 27px;
+}
+
+.social-button.twitter svg {
+  width: 21px;
+  height: 18px;
 }
 
 .page {
@@ -77,22 +121,27 @@ button {
 
 .text-container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   top: 30px;
-  width: 400px;
+  width: 30%;
+  max-width: 390px;
+}
+
+.map-container {
 }
 
 .map-container {
   position: absolute;
   right: 0;
-  width: 77.6666%;
+  width: 80%;
   height: 100%;
-  max-height: 900px;
-  background-size: cover;
+  max-height: 845px;
+  background: url('./images/001_kozepkor_3100px.jpg') top right no-repeat;
+  background-size: contain;
   box-shadow: 0 0 20px 10px black inset;
 }
 
-.map-container:nth-of-type(1) {
+/* .map-container:nth-of-type(1) {
   background: url('./images/1.svg') top right no-repeat;
 }
 
@@ -106,13 +155,13 @@ button {
 
 .map-container:nth-of-type(4) {
   background: url('./images/4.svg') top right 0 no-repeat;
-}
+} */
 
 .navigation {
   position: fixed;
   top: 120px;
   right: 3.5%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navigation-link {
@@ -123,6 +172,7 @@ button {
   background: #9a9a9a;
   border-radius: 50%;
   cursor: pointer;
+  transition: background .3s;
 }
 
 .navigation-link.active {

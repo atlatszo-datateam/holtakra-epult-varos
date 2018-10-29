@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 43.119999 8.1800003"
+   enable-background="new 0 0 100 100"
+   xml:space="preserve"
+   sodipodi:docname="nyil.svg"
+   width="43.119999"
+   height="8.1800003"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+   id="metadata1806"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs1804" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="640"
+   inkscape:window-height="480"
+   id="namedview1802"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="2.36"
+   inkscape:cx="20.9"
+   inkscape:cy="5.17"
+   inkscape:window-x="67"
+   inkscape:window-y="27"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Layer_1" />
+<g
+   id="g1799"
+   transform="translate(-29.1,-46.99)">
+	<line
+   stroke-miterlimit="10"
+   x1="31.25"
+   y1="51.080002"
+   x2="71.129997"
+   y2="51.080002"
+   id="line1789"
+   style="fill:none;stroke:#808080;stroke-miterlimit:10" />
+	<g
+   id="g1793">
+		<path
+   d="m 31.36,53.34 c -1.25,0 -2.26,-1.01 -2.26,-2.26 0,-1.25 1.01,-2.26 2.26,-2.26 1.25,0 2.26,1.01 2.26,2.26 0,1.25 -1.01,2.26 -2.26,2.26 z"
+   id="path1791"
+   inkscape:connector-curvature="0"
+   style="fill:#808080" />
+	</g>
+	<g
+   id="g1797">
+		<polygon
+   points="70.75,51.08 67.14,47.73 67.82,46.99 72.22,51.08 67.82,55.17 67.14,54.44 "
+   id="polygon1795"
+   style="fill:#808080" />
+	</g>
+</g>
+</svg>

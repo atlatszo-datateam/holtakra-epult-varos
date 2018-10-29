@@ -2,6 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin')
 
 module.exports = {
   entry: './src/index.js',
@@ -49,7 +50,8 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css'
-    })
+    }),
+    new HtmlWebpackInlineSVGPlugin()
   ],
   devtool: 'inline-source-map'
 }
