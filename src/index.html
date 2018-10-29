@@ -12,6 +12,10 @@
   <nav class="navigation">
     <ul>
       <li>
+        <a href="#page-0" class="navigation-link active"></a>
+        <span class="navigation-text">A holtakra épült város</span>
+      </li>
+      <li>
         <a href="#page-1" class="navigation-link active"></a>
         <span class="navigation-text">Bevezetés</span>
       </li>
@@ -39,21 +43,34 @@
         <a href="#page-7" class="navigation-link"></a>
         <span class="navigation-text">A huszadik század első fele</span>
       </li>
+      <li>
+        <a href="#page-8" class="navigation-link"></a>
+        <span class="navigation-text">Interaktív térkép</span>
+      </li>
+      <li>
+        <a href="#page-9" class="navigation-link"></a>
+        <span class="navigation-text">Impresszum</span>
+      </li>
     </ul>
   </nav>
   <div class="container">
-    <!-- <div class="page">
-      <div class="text-container">
+    <div class="page" id="page-0">
+      <header>
         <h1>A holtakra épült város</h1>
         <p>Temetők Budapesten a középkortól napjainkig</p>
-        <p>Bátorfy Attila</p>
-        <div class="social-buttons">
-          <button class="social-button facebook"></button>
-          <button class="social-button instagram"></button>
-          <button class="social-button twitter"></button>
+        <p class="author">Bátorfy Attila</p>
+      </header>
+      <div class="inline">
+        <div class="text-container">
+          <div class="social-buttons">
+              <button class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt=""></button>
+              <button class="social-button instagram"><img inline src="<%= require('./images/logo_instagram.svg') %>" alt=""></button>
+              <button class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt=""></button>
+            </div>
         </div>
+        <div class="map-container"></div>
       </div>
-    </div> -->
+    </div>
     <div class="page" id="page-1">
       <header class="small">
         <h2>Bevezetés</h2>
@@ -190,6 +207,7 @@
           <p>Méretében Budapest negyedik legnagyobb köztemetője az újpesti Megyeri temető, számos jeles újpesti politikus, művész, sportoló sírja található itt. </p>
           <p>Az 1948-as kommunista hatalomátvétel után a külvárosi kerületek kisebb, elszórt temetőit néhány éven belül bezárták, napjainkra pedig többségük helyén parkok, lakótelepek (Pestújhelyi lakótelep), bevásárlóközpontok (Lőrinc Center) állnak, de többnek a helye még ma is megvan és egyelőre az enyészet vár rájuk. </p>
           <p>Az elmúlt ötven évben Budapest közigazgatási határában új köztemetőt nem nyitottak, közvetlenül a városhatárnál is mindössze kettőt: a csömöri sírkertet és a budaörsi új köztemetőt. Népszerűvé váltak azonban ismét a templomok mellett kialakított faliurnás-hamvasztásos temetések. </p>
+          <a href="#page-8" class="next-page"><img inline src="<%= require('./images/nyil.svg') %>" alt="">Interaktív térkép</a>
           <div class="social-buttons">
             <button class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt=""></button>
             <button class="social-button instagram"><img inline src="<%= require('./images/logo_instagram.svg') %>" alt=""></button>
@@ -199,7 +217,50 @@
         <div class="map-container"></div>
       </div>
     </div>
-  </div>
+    <div class="page" id="page-8">
+      <div class='tableauPlaceholder' id='viz1540853277531' style='position: relative'><noscript><a href='https:&#47;&#47;www-batorfyattila-com.filesusr.com&#47;html&#47;10cfe7_ee63d3e559a43c4ccbc2cf7cbc067a5e.html'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;te&#47;temetok_0&#47;story2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='temetok_0&#47;story2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;te&#47;temetok_0&#47;story2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /><param name='increment_view_count' value='no' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1540853277531');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+    <div class="page" id="page-9">
+      <header>
+        <h2>Impressszum</h2>
+      </header>
+      <div class="impressum">
+        <p>Szöveg, térképek és adatvizualizáció: Bátorfy Attila</p>
+        <h3>Módszertan</h3>
+        <p>A térképek elkészítésénél elsősorban a felhasznált irodalomban szereplő adatokat és azonosításokat használtuk, továbbá az I., II., III. Habsburg katonai felmérések és a Habsburg kataszteri térképek digitalizált változatait. Néhány temető, különösen a középkori, a török-kori és a peremkerületi temetők pontos helye és kiterjedése ma már nem azonosítható, ezért ezeknél hozzávetőleges kiterjedést és méretet rajzoltuk meg. A térképet kiszolgáló adatbázis letölthető és szabadon felhasználható. Ha szeretnéd tudni, hogyan készült, akkor látogass el az Átlátszó adatújságírás blogjára.</p>
+        <h3>Felhasznált és ajánlott források</h3>
+        <ul class="sources">
+          <li>
+            <p><a href="http://mek.oszk.hu/11700/11728/11728.pdf" target="_blank">Fehér Jolán Antónia: <em>Budapest székesfőváros temetkezéseinek története.</em> Budapest, 1933</a></p>
+          </li>
+          <li>
+            <p><a href="http://www.bpht.hu/historiak/126.pdf" target="_blank">Szatucsek Tibor: Buda temetőinek története. In: <em>Budapesti Históriák Emlékkönyv</em>, 2011, pp. 88-98</a></p>
+          </li>
+          <li>
+            <p><a href="http://epa.oszk.hu/02100/02120/00040/pdf/EPA02120_tbm_2015_40_121-142.pdf" target="_blank">Simon Katalin: "Sincerus erga antenator nostros amor" - temetkezés és temetők a 18. századi Budán. In: <em>Tanulmányok Budapest múltjából</em> (40) 2015, pp. 121-142</a></p>
+          </li>
+          <li>
+            <p><a href="https://mult-kor.hu/cikk.php?id=7907" target="_blank">Lukácsi Attila: A fővárosi peremkerületek temetői. <em>Múlt-kor</em></a></p>
+          </li>
+          <li>
+            <p><a href="https://mult-kor.hu/20071101_egyedulallo_a_fovarosi_temetok_mostoha_sorsa" target="_blank">Lukácsi Attila: Egyedülálló a fővárosi temetők mostoha sorsa. <em>Múlt-kor</em></a></p>
+          </li>
+          <li>
+            <p><a href="https://hvg.hu/plazs/20121031_Budapest_belvarosa_hullahegyre_epult" target="_blank">Rác András: Budapest sok tízezer halottra épült. <em>Hvg.hu</em></a></p>
+          </li>
+          <li>
+            <p><a href="https://mapire.eu/hu/" target="_blank"><em>I., II., III. Habsburg katonai felmérés</em></a></p>
+          </li>
+          <li>
+            <p><a href="https://mapire.eu/hu/" target="_blank"><em>Habsburg kataszteri térkép</em></a></p>
+          </li>
+        </ul>
+
+        <p>Ez a mű a <a href="https://creativecommons.org/licenses/by/2.5/hu/" target="_blank">Creative Commons Nevezd meg! - Ne add el! - Így add tovább! 2.5 Magyarország Licenc</strong> feltételeinek megfelelően felhasználható. A projekt közpénz felhasználása nélkül készült.</p>
+        <p>Kontakt: <a href="mailto:info@atlo.hu?Subject=Holtakra%20épült%20város" target="_top">Átló</a> / <a href="mailto:batorfy.attila@gmail.com?Subject=Holtakra%20épült%20város" target="_top">Bátorfy Attila</a></p>
+      </div>
+    </div>
+  </div
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>

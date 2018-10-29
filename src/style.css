@@ -23,8 +23,15 @@ body {
 
 h2,
 h3,
-.next-page {
+.next-page,
+#page-0 h1  {
   font-family: 'Roboto Slab';
+}
+
+.page header {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
 }
 
 header h2 ,
@@ -112,6 +119,32 @@ button {
   padding-top: 30px;
 }
 
+#page-0 {
+  padding-top: 100px;
+}
+
+#page-0 h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+#page-0 p {
+  font-size: 21.5px;
+}
+
+#page-0 .author {
+  margin-top: 40px;
+  margin-bottom: 0;
+  color: #ebaa17;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#page-0 .social-buttons {
+  margin-top: 0;
+}
+
 .inline {
   display: flex;
 }
@@ -140,9 +173,15 @@ button {
   width: 80%;
   height: 100%;
   max-height: 645px;
-  background: url('./images/000_bevezetes_2016px_B.jpg') top right no-repeat;
   background-size: contain;
   box-shadow: 0 0 20px 10px black inset;
+}
+
+#page-0 .map-container {
+  right: 200px;
+  background: url('./images/graveyard.png') top right no-repeat;
+  background-size: contain;
+  box-shadow: none;
 }
 
 #page-1 .map-container {
@@ -171,6 +210,16 @@ button {
   background-size: contain;
 }
 
+#page-6 .map-container {
+  background: url('./images/005_1900_ig_2016px_B.jpg') top right no-repeat;
+  background-size: contain;
+}
+
+#page-7 .map-container {
+  background: url('./images/006_1950_ig_2016px_B.jpg') top right no-repeat;
+  background-size: contain;
+}
+
 .navigation {
   position: fixed;
   top: 120px;
@@ -178,7 +227,7 @@ button {
   width: 100%;
   max-width: 1260px;
   left: 50%;
-  transform: translateX(-53.5%);
+  transform: translateX(-48%);
 }
 
 .navigation ul {
@@ -200,7 +249,7 @@ button {
 
 .navigation li.hover .navigation-link,
 .navigation li.active .navigation-link {
-  background: #ffac00;
+  background: #ebaa17;
 }
 
 .navigation-text {
@@ -213,8 +262,23 @@ button {
 }
 
 .navigation li.hover .navigation-text {
-  color: #ffac00;
+  color: #ebaa17;
   text-shadow: 1px 1px 2px black;
+}
+
+.impressum {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin-top: 25px;
+}
+
+.impressum a {
+  color: white;
+}
+
+.impressum a:hover {
+  color: #ebaa17
 }
 
 @media (max-width: 1366px) {
