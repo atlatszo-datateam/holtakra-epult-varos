@@ -140,34 +140,34 @@ button {
   width: 80%;
   height: 100%;
   max-height: 645px;
-  background: url('./images/000_bevezetes_2016px.jpg') top right no-repeat;
+  background: url('./images/000_bevezetes_2016px_B.jpg') top right no-repeat;
   background-size: contain;
   box-shadow: 0 0 20px 10px black inset;
 }
 
 #page-1 .map-container {
   top: 95px;
-  background: url('./images/000_bevezetes_2016px.jpg') top right no-repeat;
+  background: url('./images/000_bevezetes_2016px_B.jpg') top right no-repeat;
   background-size: contain;
 }
 
 #page-2 .map-container {
-  background: url('./images/001_kozepkor_2016px.jpg') top right no-repeat;
+  background: url('./images/001_kozepkor_2016px_B.jpg') top right no-repeat;
   background-size: contain;
 }
 
 #page-3 .map-container {
-  background: url('./images/002_torok_hodoltsag_2016px.jpg') top right no-repeat;
+  background: url('./images/002_torok_hodoltsag_2016px_B.jpg') top right no-repeat;
   background-size: contain;
 }
 
 #page-4 .map-container {
-  background: url('./images/003_Buda_vissza_utan_2016px.jpg') top right no-repeat;
+  background: url('./images/003_Buda_vissza_utan_2016px_B.jpg') top right no-repeat;
   background-size: contain;
 }
 
 #page-5 .map-container {
-  background: url('./images/004_reformkor_2016px.jpg') top right no-repeat;
+  background: url('./images/004_reformkor_2016px_B.jpg') top right no-repeat;
   background-size: contain;
 }
 
