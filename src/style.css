@@ -139,14 +139,18 @@ button {
 
 .map-container {
   position: absolute;
-  top: 95px;
+  top: 120x;
   right: 0;
   width: 80%;
   height: 100%;
   max-height: 645px;
-  background: url('./images/001_kozepkor_3100px.jpg') top right no-repeat;
+  background: url('./images/001_kozepkor_2016px.jpg') top right no-repeat;
   background-size: contain;
   box-shadow: 0 0 20px 10px black inset;
+}
+
+.map-container:first-of-type {
+  top: 100px;
 }
 
 /* .map-container:nth-of-type(1) {
