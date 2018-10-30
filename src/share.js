@@ -3,7 +3,7 @@ const tumblrShareButtons = Array.from(document.querySelectorAll('.social-button.
 const twitterShareButtons = Array.from(document.querySelectorAll('.social-button.twitter'))
 const {URL} = document
 const windowSize = 'height=350,width=600'
-const tags = 'átló,átlátszó,adatvizualizáció,dataviz,holtakra%20épült%20város,halottak%20napja'
+const tags = 'átló,átlátszó,adatvizualizáció,dataviz'
 
 function shareOnFacebook () {
   const popup = window.open(`https://www.facebook.com/sharer/sharer.php?u=${URL}`, 'facebook-popup', windowSize);
