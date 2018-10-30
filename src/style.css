@@ -31,7 +31,7 @@ h3,
 .page header {
   position: relative;
   z-index: 2;
-  max-width: 1000px;
+  max-width: 600px;
 }
 
 header h2 ,
@@ -74,6 +74,16 @@ button {
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
+  transition: all .3s;
+}
+
+.next-page:hover {
+  color: #ebaa17;
+}
+
+.next-page:hover svg {
+  stroke: #ebaa17;
+  fill: #ebaa17
 }
 
 .next-page svg {
@@ -220,6 +230,10 @@ button {
   background-size: contain;
 }
 
+#page-8 {
+  z-index: 3;
+}
+
 .navigation {
   position: fixed;
   top: 120px;
@@ -227,11 +241,16 @@ button {
   width: 100%;
   max-width: 1260px;
   left: 50%;
-  transform: translateX(-48%);
+  transform: translateX(-53.5%);
 }
 
 .navigation ul {
   float: right;
+}
+
+.navigation li {
+  position: relative;
+  width: 350px;
 }
 
 .navigation-link {
