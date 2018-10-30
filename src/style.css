@@ -171,6 +171,10 @@ button {
   margin: 30px 0;
 }
 
+.tab-toolbar.public.tab-fill.tab-widget.horizontalLabels {
+  background: black !important;
+}
+
 .inline {
   display: flex;
 }
