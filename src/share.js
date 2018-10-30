@@ -16,6 +16,9 @@ function shareOnFacebook (e) {
 
 function shareOnTumblr () {
   console.log('shared on tumblr')
+  e.preventDefault()
+
+  window.open("http://www.tumblr.com/share", 'newwindow', 'width=350, height=600')
 }
 
 function shareOnTwitter (e) {
