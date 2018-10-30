@@ -31,7 +31,7 @@ h3,
 .page header {
   position: relative;
   z-index: 2;
-  max-width: 600px;
+  max-width: 785px;
 }
 
 header h2 ,
@@ -106,9 +106,13 @@ button {
   padding: 0;
 }
 
-.social-button.instagram svg {
+.social-button.twitter {
+  margin-left: 5px;
+}
+
+.social-button.tumblr svg {
   width: 25px;
-  height: 25px;
+  height: 27px;
 }
 
 .social-button.facebook svg {
@@ -117,15 +121,15 @@ button {
 }
 
 .social-button.twitter svg {
-  width: 21px;
-  height: 18px;
+  width: 25px;
+  height: 25px;
 }
 
 .page {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   padding-top: 30px;
 }
 
@@ -153,6 +157,10 @@ button {
 
 #page-0 .social-buttons {
   margin-top: 0;
+}
+
+.tableauPlaceholder {
+  margin: 30px 0;
 }
 
 .inline {
@@ -196,42 +204,43 @@ button {
 
 #page-1 .map-container {
   top: 95px;
-  background: url('./images/000_bevezetes_2016px_B.jpg') top right no-repeat;
+  background: url('./images/000_bevezetes_2016px.jpg') top right no-repeat;
   background-size: contain;
 }
 
 #page-2 .map-container {
-  background: url('./images/001_kozepkor_2016px_B.jpg') top right no-repeat;
+  background: url('./images/001_kozepkor_2016px.jpg') top right no-repeat;
   background-size: contain;
 }
 
 #page-3 .map-container {
-  background: url('./images/002_torok_hodoltsag_2016px_B.jpg') top right no-repeat;
+  background: url('./images/002_torok_hodoltsag_2016px.jpg') top right no-repeat;
   background-size: contain;
 }
 
 #page-4 .map-container {
-  background: url('./images/003_Buda_vissza_utan_2016px_B.jpg') top right no-repeat;
+  background: url('./images/003_Buda_vissza_utan_2016px.jpg') top right no-repeat;
   background-size: contain;
 }
 
 #page-5 .map-container {
-  background: url('./images/004_reformkor_2016px_B.jpg') top right no-repeat;
+  background: url('./images/004_reformkor_2016px.jpg') top right no-repeat;
   background-size: contain;
 }
 
 #page-6 .map-container {
-  background: url('./images/005_1900_ig_2016px_B.jpg') top right no-repeat;
+  background: url('./images/005_1900_ig_2016px.jpg') top right no-repeat;
   background-size: contain;
 }
 
 #page-7 .map-container {
-  background: url('./images/006_1950_ig_2016px_B.jpg') top right no-repeat;
+  background: url('./images/006_1950_ig_2016px.jpg') top right no-repeat;
   background-size: contain;
 }
 
 #page-8 {
   z-index: 3;
+  background: black;
 }
 
 .navigation {
@@ -250,7 +259,7 @@ button {
 
 .navigation li {
   position: relative;
-  width: 350px;
+  width: 370px;
 }
 
 .navigation-link {
@@ -273,7 +282,7 @@ button {
 
 .navigation-text {
   position: absolute;
-  right: 45px;
+  right: 40px;
   color: transparent;
   font-weight: bold;
   padding-top: 7px;
