@@ -7,13 +7,14 @@
   <meta name="description" content="Temetők Budapesten a középkortól napjainkig">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="<%= htmlWebpackPlugin.files.chunks.main.css %>" />
-  <!-- FACEBOOK SHARE -->
+  <!-- OPENGRAPH SHARE -->
   <meta property="og:url" content="https://atlo.team/holtakra-epult-varos" />
   <meta property="og:title" content="Holtakra épült város" />
   <meta property="og:description" content="Temetők Budapesten a középkortól napjainkig" />
   <meta property="og:image" content="http://placekitten.com/1200/630" />
   <meta property="og:locale" content="hu_HU" />
-  <meta name="twitter:dnt" content="on">
+  <meta name="twitter:dnt" content="on" />
+  <meta name="twitter:card" content="summary" />
 </head>
 <body>
   <nav class="navigation">
@@ -70,9 +71,9 @@
       <div class="inline">
         <div class="text-container">
           <div class="social-buttons">
-              <button class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
-              <button class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
-              <button class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
+              <button type="button" class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
+              <button type="button" class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
+              <button type="button" class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
             </div>
         </div>
         <div class="map-container"></div>
@@ -89,9 +90,9 @@
           <p>De hol voltak ezek a temetők? Kik temetkeztek ott? Kik voltak a legismertebb halottaik? Mi épült rájuk? Vannak-e még nyomaik? Ezzel a térképes anyaggal – korábbi cikkekre, tanulmányokra is építve – ennek járunk utána.</p>
           <a href="#page-2" class="next-page"><img inline src="<%= require('./images/nyil.svg') %>" alt="következő oldal">Középkor</a>
           <div class="social-buttons">
-            <button class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
-            <button class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
-            <button class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
+            <button type="button" class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
+            <button type="button" class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
+            <button type="button" class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
           </div>
         </div>
         <div class="map-container"></div>
@@ -109,9 +110,9 @@
           <p>Több uralkodónkat is a mai Budapest területén temették el. Sokak szerint Árpád fejedelem fehéregyházi sírja a jelenleg az Óbuda Center bevásárlóközpont területén lévő platón keresendő. A királyi családból a nyulak-szigeti (ma Margitsziget) domonkos zárdába temették Árpádházi Szent Margitot és V. András királyt, a budavári ferences Evangélista Szent János kolostorba pedig az utolsó Árpád-házi királyunkat, III. Andrást. Ennek területét foglalja el a későbbi karmelita rendház és Várszínház, amely a jelenlegi miniszterelnök rezidenciája lesz.</p>
           <a href="#page-3" class="next-page"><img inline src="<%= require('./images/nyil.svg') %>" alt="">Török-hódoltság</a>
           <div class="social-buttons">
-            <button class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
-            <button class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
-            <button class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
+            <button type="button" class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
+            <button type="button" class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
+            <button type="button" class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
           </div>
         </div>
         <div class="map-container"></div>
@@ -130,9 +131,9 @@
           <p>A pesti oldalon török-kori muzulmán temető volt a mai Széchenyi téren a Lánchíd előtt, ami szintén látható a korabeli metszeteken is. Pest déli, kecskeméti kapujánál a mai Kálvin tér-Református templom, Lónyay utca és Erkel utca négyszögben volt a török temető, míg a mai Csarnok-téren egy keresztény temetőt azonosítottak a régészek.</p>
           <a href="#page-4" class="next-page"><img inline src="<%= require('./images/nyil.svg') %>" alt="">Buda visszafoglalása után</a>
           <div class="social-buttons">
-            <button class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
-            <button class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
-            <button class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
+            <button type="button" class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
+            <button type="button" class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
+            <button type="button" class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
           </div>
         </div>
         <div class="map-container"></div>
@@ -150,9 +151,9 @@
           <p>A 18. század végén nyitották meg a korszak további két legjelentősebb temetőjét. A budai oldalon a mai Szilágyi Erzsébet fasor felett húzódó Vízivárosi temetőt, a pesti oldalon pedig a régi Váci úti temetőt, amely korabeli jelentőségében a Fiumei úti nemzeti sírkert elődjének tekinthető.</p>
           <a href="#page-5" class="next-page"><img inline src="<%= require('./images/nyil.svg') %>" alt="">A reformkori Pest és Buda</a>
           <div class="social-buttons">
-            <button class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
-            <button class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
-            <button class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
+            <button type="button" class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
+            <button type="button" class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
+            <button type="button" class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
           </div>
         </div>
         <div class="map-container"></div>
@@ -170,9 +171,9 @@
           <p>A végleges temetőfelszámolások előtti legfontosabb újratemetés Kisfaludy Károlyé volt 1859-ben, koporsóját a Váci úti temetőből szállították át. Az áttelepítések során azonban számos tragikus veszteség is történt, így a józsefvárosiból átszállítandó Révai Miklós (1807) nyelvész, és a ferencvárosiból áttelepítendő Bihari János (1827) prímás és Vitkovics Mihály költő (1829) hamvai örökre elvesztek.</p>
           <a href="#page-6" class="next-page"><img inline src="<%= require('./images/nyil.svg') %>" alt="következő oldal">A szabadság harc után</a>
           <div class="social-buttons">
-            <button class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
-            <button class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
-            <button class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
+            <button type="button" class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
+            <button type="button" class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
+            <button type="button" class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
           </div>
         </div>
         <div class="map-container"></div>
@@ -191,9 +192,9 @@
           <p>Szintén ebben az időszakban nyitottak meg a később Nagy-Budapesthez csatolt peremvárosok első köztemetői a sokasodó lakosság miatt, illetve az emancipálódó zsidóság is ekkor nyitotta a legtöbb temetőjét, köztük a Fiumei úti sírkert hátsó traktusában található Salgótarjáni útit, a méreteiben is hatalmas Kozma utcait, és a még szintén álló Csörsz utcait. Azóta eltűnt, vagy bezárt státuszúvá vált a Táborhegyi (mára csak az ortodox fogadóépület maradt meg belőle), a ma a Központi Statisztikai Hivatal székháza által elfoglalt Mechwart ligeti, az újpesti, a kispesti és a soroksári zsidó temető.</p>
           <a href="#page-7" class="next-page"><img inline src="<%= require('./images/nyil.svg') %>" alt="következő oldal">A XX. század első fele</a>
           <div class="social-buttons">
-            <button class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
-            <button class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
-            <button class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
+            <button type="button" class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
+            <button type="button" class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
+            <button type="button" class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
           </div>
         </div>
         <div class="map-container"></div>
@@ -212,9 +213,9 @@
           <p>Az elmúlt ötven évben Budapest közigazgatási határában új köztemetőt nem nyitottak, közvetlenül a városhatárnál is mindössze kettőt: a csömöri sírkertet és a budaörsi új köztemetőt. Népszerűvé váltak azonban ismét a templomok mellett kialakított faliurnás-hamvasztásos temetések.</p>
           <a href="#page-8" class="next-page"><img inline src="<%= require('./images/nyil.svg') %>" alt="következő oldal">Interaktív térkép</a>
           <div class="social-buttons">
-            <button class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
-            <button class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
-            <button class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
+            <button type="button" class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
+            <button type="button" class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
+            <button type="button" class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
           </div>
         </div>
         <div class="map-container"></div>
@@ -233,9 +234,9 @@
         <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Aholtakrapltvros2Thecitybuiltondeath2&#47;valls' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ah&#47;Aholtakrapltvros2Thecitybuiltondeath2&#47;valls&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1540931501693');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1200px';vizElement.style.height='727px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
       <a href="#page-9" class="next-page"><img inline src="<%= require('./images/nyil.svg') %>" alt="következő oldal">Impresszum</a>
       <div class="social-buttons">
-        <button class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
-        <button class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
-        <button class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
+        <button type="button" class="social-button facebook"><img inline src="<%= require('./images/logo_facebook.svg') %>" alt="facebook megosztás"></button>
+        <button type="button" class="social-button tumblr"><img inline src="<%= require('./images/logo_tumblr.svg') %>" alt="tumblr megosztás"></button>
+        <button type="button" class="social-button twitter"><img inline src="<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
       </div>
     </div>
     <div class="page" id="page-9">
