@@ -45,13 +45,13 @@ module.exports = {
       inject: false,
       hash: true,
       template: './src/index.html',
-      filename: 'index.html',
+      filename: '../index.html',
       minify: true
     }),
+    new HtmlWebpackInlineSVGPlugin(),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css'
-    }),
-    new HtmlWebpackInlineSVGPlugin()
+    })
   ],
   devtool: 'inline-source-map'
 }
