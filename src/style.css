@@ -165,6 +165,18 @@ button {
   margin-right: 10px;
 }
 
+.powered-by {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.powered-by svg,
+.powered-by img {
+  width: 60px;
+  margin-left: 10px;
+}
+
 #page-0 .social-buttons {
   margin-top: 0;
 }
