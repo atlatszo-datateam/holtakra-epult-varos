@@ -223,6 +223,10 @@ button {
   box-shadow: 0 0 20px 10px black inset;
 }
 
+.map-container img {
+  display: none;
+}
+
 #page-0 .map-container {
   right: 200px;
   background: url('./images/graveyard.png') top right no-repeat;
@@ -338,16 +342,57 @@ button {
   color: #ebaa17
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1200px) {
   .page {
     padding-left: 30px;
   }
 
   .navigation {
-    right: 30px;
+    display: none;
   }
 
-  .text-container {
-    width: 350px;
+  .page {
+    min-height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  header,
+  .text-container,
+  .map-container {
+    width: 100%;
+    max-width: 100%
+  }
+
+  .inline {
+    flex-direction: column-reverse;
+  }
+
+  .map-container {
+    position: relative;
+    top: 15px;
+    left: -15%;
+    width: 115%;
+    max-width: 115%;
+    background: none !important;
+  }
+
+  #page-0 {
+    padding-top: 30px;
+  }
+
+  #page-0 .map-container {
+    left: 0px;
+    width: 90%;
+    max-width: 90%;
+  }
+
+  #page-1 .map-container {
+    top: 15px;
+  }
+
+  .map-container img {
+    display: block;
+    width: 100%;
   }
 }

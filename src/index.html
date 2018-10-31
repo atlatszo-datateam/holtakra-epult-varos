@@ -18,6 +18,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@AtloTeam">
   <meta name="twitter:image" content="https://atlo.team/a-holtakra-epitett-varos/dist/<%= require('./images/temetok_twitter.jpg') %>">
+  <meta property="fb:app_id" content="345585816190715">
 </head>
 <body>
   <nav class="navigation">
@@ -79,7 +80,9 @@
               <button type="button" class="social-button twitter"><img inline src="dist/<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
             </div>
         </div>
-        <div class="map-container"></div>
+        <div class="map-container">
+          <img src="dist/<%= require('./images/graveyard.png') %>" alt="">
+        </div>
       </div>
     </div>
     <div class="page" id="page-1">
@@ -98,7 +101,9 @@
             <button type="button" class="social-button twitter"><img inline src="dist/<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
           </div>
         </div>
-        <div class="map-container"></div>
+        <div class="map-container">
+          <img src="dist/<%= require('./images/000_bevezetes_2016px.jpg') %>" alt="">
+        </div>
       </div>
     </div>
     <div class="page" id="page-2">
@@ -118,7 +123,9 @@
             <button type="button" class="social-button twitter"><img inline src="dist/<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
           </div>
         </div>
-        <div class="map-container"></div>
+        <div class="map-container">
+          <img src="dist/<%= require('./images/001_kozepkor_2016px.jpg') %>" alt="">
+        </div>
       </div>
     </div>
     <div class="page" id="page-3">
@@ -139,7 +146,9 @@
             <button type="button" class="social-button twitter"><img inline src="dist/<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
           </div>
         </div>
-        <div class="map-container"></div>
+        <div class="map-container">
+          <img src="dist/<%= require('./images/002_torok_hodoltsag_2016px.jpg') %>" alt="">
+        </div>
       </div>
     </div>
     <div class="page" id="page-4">
@@ -159,7 +168,9 @@
             <button type="button" class="social-button twitter"><img inline src="dist/<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
           </div>
         </div>
-        <div class="map-container"></div>
+        <div class="map-container">
+          <img src="dist/<%= require('./images/003_Buda_vissza_utan_2016px.jpg') %>" alt="">
+        </div>
       </div>
     </div>
     <div class="page" id="page-5">
@@ -179,7 +190,9 @@
             <button type="button" class="social-button twitter"><img inline src="dist/<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
           </div>
         </div>
-        <div class="map-container"></div>
+        <div class="map-container">
+          <img src="dist/<%= require('./images/004_reformkor_2016px.jpg') %>" alt="">
+        </div>
       </div>
     </div>
     <div class="page" id="page-6">
@@ -200,7 +213,9 @@
             <button type="button" class="social-button twitter"><img inline src="dist/<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
           </div>
         </div>
-        <div class="map-container"></div>
+        <div class="map-container">
+          <img src="dist/<%= require('./images/005_1900_ig_2016px.jpg') %>" alt="">
+        </div>
       </div>
     </div>
     <div class="page" id="page-7">
@@ -221,7 +236,9 @@
             <button type="button" class="social-button twitter"><img inline src="dist/<%= require('./images/logo_twitter.svg') %>" alt="twitter megosztás"></button>
           </div>
         </div>
-        <div class="map-container"></div>
+        <div class="map-container">
+          <img src="dist/<%= require('./images/006_1950_ig_2016px.jpg') %>" alt="">
+        </div>
       </div>
     </div>
     <div class="page" id="page-8">
@@ -289,6 +306,24 @@
       </div>
     </div>
   </div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId            : '345585816190715',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v3.2'
+      });
+    };
+  
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>
