@@ -6,10 +6,14 @@ const windowSize = 'height=350,width=600'
 const tags = 'átló,átlátszó,adatvizualizáció,dataviz'
 
 function shareOnFacebook () {
-  const popup = window.open(`https://www.facebook.com/sharer/sharer.php?u=${URL}`, 'facebook-popup', windowSize);
+  /* const popup = window.open(`https://www.facebook.com/sharer/sharer.php?u=${URL}`, 'facebook-popup', windowSize);
   if (popup.focus) popup.focus()
 
-  return false
+  return false */
+  FB.ui({
+    method: 'share',
+    href: URL,
+  }, function(response){});
 }
 
 function shareOnTumblr () {
