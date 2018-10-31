@@ -8,12 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="<%= htmlWebpackPlugin.files.chunks.main.css %>" />
   <!-- OPENGRAPH SHARE -->
+  <meta property="og:type" content="article">
   <meta property="og:url" content="https://atlo.team/holtakra-epult-varos" />
   <meta property="og:title" content="Holtakra épült város" />
   <meta property="og:description" content="Temetők Budapesten a középkortól napjainkig" />
-  <meta property="og:image" content="http://placekitten.com/1200/630" />
   <meta property="og:locale" content="hu_HU" />
-  <meta name="twitter:dnt" content="on" />
+  <meta property="og:image" content="<%= require('./images/temetok_tumblr.jpg') %>">
+  <meta property="article:publisher" content="https://www.facebook.com/atloteam">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@AtloTeam">
   <meta name="twitter:title" content="Holtakra épült város">
