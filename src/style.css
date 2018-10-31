@@ -31,7 +31,7 @@ h3,
 .page header {
   position: relative;
   z-index: 2;
-  max-width: 785px;
+  max-width: 600px;
 }
 
 header h2 ,
@@ -171,9 +171,11 @@ button {
   margin: 30px 0;
 }
 
-.tab-toolbar.public.tab-fill.tab-widget.horizontalLabels {
-  background: black !important;
+
+#toolbar-container {
+  display: none !important;
 }
+
 
 .inline {
   display: flex;
@@ -271,7 +273,7 @@ button {
 
 .navigation li {
   position: relative;
-  width: 370px;
+  width: 250px;
 }
 
 .navigation-link {
