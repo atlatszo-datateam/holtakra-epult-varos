@@ -24,7 +24,7 @@
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
    id="defs13" /><sodipodi:namedview
    pagecolor="#ffffff"
-   bordercolor="#666666"
+   bordercolor="white"
    borderopacity="1"
    objecttolerance="10"
    gridtolerance="10"
@@ -49,8 +49,8 @@
 <style
    type="text/css"
    id="style2">
-	.st0{fill:#FF1F2D;}
-	.st1{fill:#FF202C;}
+	.st0{fill:white;}
+	.st1{fill:white;}
 </style>
 <g
    id="g8"
@@ -60,12 +60,12 @@
    d="M 984.5,135.6 1002.8,357.1 781.3,375.4 763,153.8 984.5,135.6 m 34.8,-41 -297.3,24.5 24.5,297.3 297.3,-24.5 z"
    id="path4"
    inkscape:connector-curvature="0"
-   style="fill:#ff1f2d" />
+   style="fill:white" />
 	<path
    class="st1"
    d="m 906.8,302.4 38.8,-3.1 -51.1,-102.3 -37.3,3.2 -31.7,108.8 36.8,-3 3.9,-16.7 34.1,-2.7 z m -34.2,-39.9 6.5,-27.3 10.7,26 z"
    id="path6"
    inkscape:connector-curvature="0"
-   style="fill:#ff202c" />
+   style="fill:white" />
 </g>
 </svg>
