@@ -13,7 +13,7 @@ function shareOnFacebook () {
 }
 
 function shareOnTumblr () {
-  const popup = window.open(`https://tumblr.com/share/tool?shareSource=legacy&canonicalUrl=${URL}&posttype=link&title=Holtakra+épült+város&content=${URL}`, 'tumblr-popup', windowSize)
+  const popup = window.open(`https://tumblr.com/share/tool?shareSource=legacy&canonicalUrl=${URL}&posttype=link`, 'tumblr-popup', windowSize)
   if (popup.focus) popup.focus()
 
   return false
