@@ -13,14 +13,14 @@ function shareOnFacebook () {
 }
 
 function shareOnTumblr () {
-  const popup = window.open(`http://tumblr.com/widgets/share/tool?canonicalUrl=${URL}&tags=${tags}`, 'tumblr-popup', windowSize)
+  const popup = window.open(`http://tumblr.com/widgets/share/tool?canonicalUrl=${URL}`, 'tumblr-popup', windowSize)
   if (popup.focus) popup.focus()
 
   return false
 }
 
 function shareOnTwitter () {
-  const popup = window.open(`https://twitter.com/share?url=${URL}&text=Temetők%20Budapesten%20a%20középkortól%20napjainkig&hashtags=${tags}`, 'twitter-popup', windowSize);
+  const popup = window.open(`https://twitter.com/share?url=${URL}`, 'twitter-popup', windowSize);
   if (popup.focus) popup.focus()
 
   return false
